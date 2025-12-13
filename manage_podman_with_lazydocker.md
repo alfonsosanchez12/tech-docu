@@ -40,7 +40,7 @@ With these tools in place, it's time to tackle the manual connection process. Tr
 
 #### Remote podman instance management
 
-If your intension is to manage a **remote** Podman instance with Lazydocker, make sure you have (aside a `podman` instance) enabled lingering and a `podman-socket`  
+If your goal is to manage a **remote** Podman instance with Lazydocker, make sure you have (aside a `podman` instance) enabled lingering and a `podman-socket`  
 
 ```shell
 loginctl enable-linger $USER
@@ -60,7 +60,7 @@ curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock http://d/v3.0.0/libpod/_p
 
 #### local Podman instance management
 
-If your intension is to manage a **local** Podman instance with Lazydocker, verify you have:
+If your goal is to manage a **local** Podman instance with Lazydocker, verify you have:
 
 **For a local linux-machine** a `podman-socket` enabled
 
