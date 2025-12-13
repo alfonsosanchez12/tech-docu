@@ -1,6 +1,9 @@
 # Managing Local and Remote Podman instances over LazyDocker
 
+<img width="1708" height="1080" alt="image" src="https://github.com/user-attachments/assets/bb66b70b-ea43-44ba-8046-be2f23f80c87" />
+
 Image of Lazydocker running over a Podman socket. Podman logo by [podman](https://raw.githubusercontent.com/containers/common/main/logos/podman-logo-full-vert.png)
+
 If you're like me, you love the power of Podman for rootless containers and the efficiency of Lazydocker's TUI. But getting them to play nicely, especially across a local machine and remote servers, can feel like a chore of endless SSH commands and socket forwarding. The core problem many of us face is the complexity of configuring Lazydocker to manage multiple Podman instances, a process that often involves manually establishing SSH tunnels and configuring connections.
 
 This guide will help you with that process. First we will walk through the manual configuration steps to provide a solid understanding of the underlying mechanics. Then, I will introduce `ezpodman`, a wrapper script designed to automate and simplify this entire workflow, turning a complex chore into a single, effortless command.
