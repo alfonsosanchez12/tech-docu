@@ -34,8 +34,6 @@ Before we get our hands dirty with configs, let's do a quick tool check. The tab
 |-----------|-----------------------------|
 | `fzf`     | Fuzzy remote picker         |
 
-With these tools in place, it's time to tackle the manual connection process. Trust me, learning this once will save you hours of debugging later.
-
 ### Environment requirements
 
 #### Remote podman instance management
