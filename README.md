@@ -15,7 +15,7 @@ If it helps someone else too, even better.
 
 Topics may include (depending on what I’m playing with):
 - Linux, Podman, containers, incus
-- OpenShift, Kubernetes, GitOp, CI/CD
+- OpenShift, Kubernetes, GitOps, CI/CD
 - Whatever I’m testing this week
 
 ---
