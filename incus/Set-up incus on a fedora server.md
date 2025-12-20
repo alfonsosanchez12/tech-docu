@@ -15,7 +15,7 @@ cat /etc/group
 ## Enable incus socket
 `sudo systemctl enable --now incus.socket`
 
-## If using lvm for storage pool
+## If re-using an lvm storage pool
 
 **Check**
 ```
