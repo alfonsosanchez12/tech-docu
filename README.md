@@ -37,6 +37,8 @@ If you spot something wrong or have a better approach, feel free to open an issu
 
 ---
 
+Special thanks to @rgerardi as some of this notes may come from our tech talks.
+
 ## ⭐ If this helped you
 
 Drop a ⭐ so I know it was useful, and so I’m forced to keep it updated 😄
