@@ -1,6 +1,7 @@
 ## Issue
 
-> [!WARNING] Issue
+> [!NOTE]
+> **Issue:**
 > Error when trying to do shell on VM that was deployed on an incus instance on Fedora 42/43
 
 ```
