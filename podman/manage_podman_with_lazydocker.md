@@ -10,7 +10,7 @@ This guide will help you with that process by introducing `ezpodman`, a wrapper 
 
 The Official guthub repo for this could is [alfonsosanchez12/ezpodman](https://github.com/alfonsosanchez12/ezpodman)
 
-> If you are also interested in knowing how to manage this process manually, you can read it here -> [alfonsosanchez12/podman_on_lazydocker_The-Hard-Way.md](https://github.com/alfonsosanchez12/tech-docu/blob/main/podman_on_lazydocker_The-Hard-Way.md.md)
+> If you are also interested in knowing how to manage this process manually, you can read it here -> [alfonsosanchez12/podman_on_lazydocker_The-Hard-Way.md](https://github.com/alfonsosanchez12/tech-docu/blob/main/podman/podman_on_lazydocker_The-Hard-Way.md)
 
 ## Setting the Stage: Essential Prerequisites
 
