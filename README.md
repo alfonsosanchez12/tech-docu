@@ -43,5 +43,5 @@ Drop a ⭐ so I know it was useful, and so I’m forced to keep it updated 😄
 
 ---
 
-Special thanks to [@rgerardi](https://github.com/rgerardi) for his contribution as some of this notes may come from our tech talks.
+Special thanks to [@rgerardi](https://github.com/rgerardi) for his contributions as some of this notes may come from our tech talks.
 
