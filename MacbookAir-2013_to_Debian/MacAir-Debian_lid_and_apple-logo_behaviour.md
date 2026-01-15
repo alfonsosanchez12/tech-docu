@@ -337,5 +337,3 @@ Do **not** rely on `/proc/.../state`. Use the lid events from `acpi_listen`�
 That’s normal: the Apple logo is physically printed / reflective. The real check is whether the LCD **backlight glow** is off.
 
 ---
-
-If you want, paste your final files (`/etc/acpi/events/lid-open`, `lid-close`, and the script) and I’ll format them neatly as a “Config Listing” section for your README.
