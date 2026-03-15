@@ -6,21 +6,21 @@
 
 I'll be honest, this is not a neutral comparison. This is me telling you why I think Incus is one of the best tools you can pick up when you're starting a homelab and want to actually learn how infrastructure works, not just click through an UI until something runs.
 
-About a year ago, a friend who became my unofficial Linux and DevOps mentor introduced me to Incus. Before that, I had tried Proxmox, gotten frustrated, and nearly given up on self-hosting. What changed wasn't just the tool, it was the philosophy behind it.
+About a year ago, a friend who became my unofficial Linux and DevOps mentor introduced me to Incus. Before that, I had tried Proxmox and gotten frustrated. What changed wasn't just the tool, it was the philosophy behind it.
 
 ## The Proxmox experience
 
 When I first decided to build my homelab a while ago, I did what most beginers do, followed the youtubers path. And YouTube had a pretty clear pathway: *Proxmox is the way to go. It's easy, it's powerful, it's what everyone uses.* So I installed it on my main server and got ready to learn.
 
-By that moment I was already comfortable with Linux and the CLI, but new to infrastructure. I expected a learning curve. What I didn't expect was feeling unconfortable with the tool before I even got started. The web UI is smashed in your face, the subscription base repository is annoying, every VM starts with an ISO and an installer, and the whole thing feels overwhelming.
+By that moment I was already comfortable with Linux and the CLI, but new to infrastructure. I expected a learning curve. What I didn't expect was feeling unconfortable with the tool before I even got started. The subscription base system is annoying, every VM starts with an ISO and an installer, and the whole thing feels overkill in the first intance.
 
-I just wanted to spin up a couple of environments and learn. Instead, I got an over stacked suit I wasn't ready for, and I walked away.
+I just wanted to spin up a couple of environments and learn in the process. Instead, I got an over stacked suit I wasn't ready for, and I walked away.
 
 For some time after that I stuck with Podman as a way to keep experimenting without the hassle of dealing with all the extra features I didn't need. Podman taught me a lot about the containers. However, I couldn't simulate "real" infrastructure the way I wanted. That's when the same mentor pointed me toward Incus, and things started to click.
 
 ## The Linux philosophy analogy
 
-Here's how I think about it. Proxmox is the "Windows" of hypervisors, it comes fully loaded out of the box. "Noisy" UI, unsolicited features, workflows, all decided for you. That's great if you're not in a learning journey. It's overwhelming if you're still figuring it out.
+Here's how I think about it. Proxmox is the "Commercial OS" of hypervisors, it comes fully loaded out of the box. Bloaded UI, unsolicited features and workflows, all decided for you. That's great if you're not in a learning journey. It's too much if you're still figuring it out.
 
 Incus is the "Linux" of hypervisors. It comes with the minimum needed to get going, and you build from there based on what you actually need. No web UI by default, but you can add one. No ISO management forced on you, but it's available when you need it. No annoying enterprise subscription; it's fully open source and community driven.
 
@@ -64,7 +64,7 @@ incus exec my-container -- bash
 incus shell my-container
 ```
 
-You are not limited to run LXC images repo that comes by default. If you prefer OCI Docker and Podman images, you can use them, and Incus system containers are a perfect host for them. You can add the Docker or Podman repos natively:
+You are not limited to run with LXC images repo that comes by default. If you prefer OCI Docker and Podman images, you can use them, and Incus containers are a perfect host for them. You can add the Docker or Podman repos natively:
 
 ```bash
 # Add Podman and Doker repo:
@@ -82,9 +82,9 @@ This pattern is clean and reusable trhough all the incus expirience.
 
 I run Incus on Debian servers. After about a year, my homelab looks like this:
 
-In containers: **Pi-hole** (network-wide ad blocking), **Caddy** (reverse proxy and automatic TLS), and **Step-CA** (a private certificate authority for internal services). Each lives in its own isolated container, easy to snapshot, easy to rebuild.
+In containers: **Pi-hole** (ad blocking), **Caddy** (reverse proxy and automatic TLS), and **Step-CA** (a private certificate authority for internal services), among others. Each lives in its own isolated container, easy to snapshot, easy to rebuild.
 
-In VMs: dedicated nodes for Kubernetes lab clusters. Running Kubernetes in Incus VMs gives you real kernel isolation per node, which means you're practicing on something that actually resembles a production environment — not a nested hack.
+In VMs: dedicated nodes for Kubernetes lab clusters. Running Kubernetes in Incus VMs gives you real kernel isolation per node, which means you're practicing on something that actually feels like a production environment.
 
 Every one of those deployments taught me something. Networking between containers, storage profiles, cloud-init configuration. I learned all of it hands-on because Incus exposes those concepts directly instead of hiding them away behind a Web UI.
 
@@ -95,8 +95,6 @@ Yes, if you value deep learning and hands-on infrastructure, if you really want 
 This is my take, if you're starting your homelab journey, are comfortable with Linux and a terminal, and want a tool that grows with your understanding, Incus is hard to beat.
 
 > The best tool isn't the one with the most features. It's the one that makes you understand what you're doing.
-
-Incus did that for me. A year in, I'm a better DevOps engineer for it, not because Incus is magic, but because it got out of my way and let me learn.
 
 ---
 
