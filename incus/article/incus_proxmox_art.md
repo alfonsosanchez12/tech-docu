@@ -46,7 +46,7 @@ incus launch images:ubuntu/24.04 my-container
 incus launch images:ubuntu/24.04 my-vm --vm
 ```
 
-Same command, one flag. The mental model is consistent across containers and VMs, which is something you really appreciate once you've worked with tools that treat them as completely separate things.
+Same command, one flag. The mental model is consistent across containers and VMs, which is something you really appreciate once you've worked with separated tools to get them both.
 
 ## Containers and VMs, The best of both worlds.
 
