@@ -20,11 +20,11 @@ For some time after that I stuck with Podman as a way to keep experimenting with
 
 ## The Linux philosophy analogy
 
-Here's how I think about it. Proxmox is the "Commercial OS" of hypervisors, it comes fully loaded out of the box. Bloaded UI, unsolicited features and workflows, all decided for you. That's great if you're not in a learning journey. It's too much if you're still figuring it out.
+Here's how I think about it. Proxmox is the "Commercial OS" of hypervisors, it comes fully loaded out of the box. Bloated UI, unsolicited features and workflows, all decided for you. That's great if you're not in a learning journey. It's too much when you're still figuring it out.
 
-Incus is the "Linux" of hypervisors. It comes with the minimum needed to get going, and you build from there based on what you actually need. No web UI by default, but you can add one. No ISO management forced on you, but it's available when you need it. No annoying enterprise subscription; it's fully open source and community driven.
+Incus is the "Linux" of hypervisors. You can start with the minimum, just a couple of commands will get you going, and then you can build from there based on what you actually need. The web UI exists, you enable it when you want it. ISO-based installs are supported, use them when you need them. No annoying enterprise subscription; it's fully open source and community driven.
 
-That minimalism isn't a weakness. It's a teaching tool, it leads you to learn and try. Every component you add to Incus, you add it intentionally. You understand why it's there because you put it there yourself. That's exactly how Linux works, and it's exactly how good DevOps engineers think.
+That minimalism is the beauty of it. It's a teaching tool, it leads you to learn and try. Every component, every configuration you add to Incus, you add it intentionally. You understand why it's there because you put it there yourself. That's exactly how Linux works, and it's exactly how good DevOps engineers think.
 
 ## Getting started is really fast
 
@@ -76,7 +76,7 @@ incus launch quay/podman:hello --ephemeral --console
 incus launch oci-docker:hello-world --ephemeral --console
 ```
 
-This pattern is clean and reusable through all the incus expirience.
+This pattern is clean and reusable through all the incus experience.
 
 ## What my homelab actually looks like
 
