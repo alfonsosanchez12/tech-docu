@@ -10,11 +10,11 @@ About a year ago, a friend who became my unofficial Linux and DevOps mentor intr
 
 ## The Proxmox experience
 
-When I first decided to build my homelab a while ago, I did what most beginers do, followed the youtubers path. And YouTube had a pretty clear pathway: *Proxmox is the way to go. It's easy, it's powerful, it's what everyone uses.* So I installed it on my main server and got ready to learn.
+When I first decided to build my homelab a while ago, I did what most beginers do, followed the youtubers path: *Proxmox is the way to go. It's easy, it's powerful, it's what everyone uses.* So I installed it on my main server and got ready to learn.
 
-By that moment I was already comfortable with Linux and the CLI, but new to infrastructure. I expected a learning curve. What I didn't expect was feeling unconfortable with the tool before I even got started. The subscription base system is annoying, every VM starts with an ISO and an installer, and the whole thing feels overkill in the first intance.
+I expected a learning curve. What I didn't expect was feeling unconfortable with the tool before I even got started. The subscription base system is annoying, every VM starts with an ISO and an installer, and the whole thing feels overkill in the first intance.
 
-I just wanted to spin up a couple of environments and learn in the process. Instead, I got an over stacked suit I wasn't ready for, and I walked away.
+I just wanted to spin up a couple of environments and learn in the process. Instead, I got an over stacked suit I wasn't asking for, and I walked away.
 
 For some time after that I stuck with Podman as a way to keep experimenting without the hassle of dealing with all the extra features I didn't need. Podman taught me a lot about the containers. However, I couldn't simulate "real" infrastructure the way I wanted. That's when the same mentor pointed me toward Incus, and things started to click.
 
@@ -50,9 +50,9 @@ Same command, one flag. The mental model is consistent across containers and VMs
 
 ## Containers and VMs, The best of both worlds.
 
-One thing Incus helps you learn through hands-on is the difference between system containers and virtual machines, and where each fits.
+One thing Incus helps you learn through hands-on is the difference between containers and virtual machines, and where each fits.
 
-Incus system containers (LXC-based) are like lightweith VMs, they share the host kernel, boot with a full OS, run systemd, have their own network, behave like a real machine; but they're much lighter than a VM because there's no hardware emulation. Perfect to use in Old HW or small systems where you can spin lots of these.
+Incus containers (LXC based) are like lightweith VMs, they share the host kernel, boot with a full OS, run systemd, have their own network, behave like a real machine; but they're much lighter than a VM because there's no hardware emulation. Perfect to use in old HW or small systems where you can spin lots of these.
 
 VMs in Incus run via QEMU and give you full isolation. You can use them for things like Kubernetes nodes, where you need a proper isolated kernel, or for testing distros.
 
@@ -86,7 +86,7 @@ In containers: **Pi-hole** (ad blocking), **Caddy** (reverse proxy and automatic
 
 In VMs: dedicated nodes for Kubernetes lab clusters. Running Kubernetes in Incus VMs gives you real kernel isolation per node, which means you're practicing on something that actually feels like a production environment.
 
-Every one of those deployments taught me something. Networking between containers, storage profiles, cloud-init configuration. I learned all of it hands-on because Incus exposes those concepts directly instead of hiding them away behind a Web UI.
+Every one of those deployments taught me something. Networking between containers, storage profiles, cloud-init configuration. I learned all of it hands-on because Incus don't hyde those concepts behind a Web UI.
 
 ## Is Incus for everyone?
 
