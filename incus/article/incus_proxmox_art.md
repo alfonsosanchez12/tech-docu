@@ -76,7 +76,7 @@ incus launch quay/podman:hello --ephemeral --console
 incus launch oci-docker:hello-world --ephemeral --console
 ```
 
-This pattern is clean and reusable trhough all the incus expirience.
+This pattern is clean and reusable through all the incus expirience.
 
 ## What my homelab actually looks like
 
