@@ -100,4 +100,4 @@ Incus did that for me. A year in, I'm a better DevOps engineer for it, not becau
 
 ---
 
-*If you're curious about Incus, the official documentation is at [linuxcontainers.org/incus](https://linuxcontainers.org/incus). The community on the forums and GitHub is also genuinely helpful.*
+*If you're curious about Incus, the official documentation is at [linuxcontainers.org/incus](https://linuxcontainers.org/incus). The community on the forums and GitHub is also really helpful.*
