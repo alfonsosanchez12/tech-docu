@@ -6,7 +6,7 @@
 
 I'll be honest, this is not a neutral comparison. This is me telling you why I think Incus is one of the best tools you can pick up when you're starting a homelab and want to actually learn how infrastructure works, not just click through an UI until something runs.
 
-About a year ago, a friend who became my unofficial Linux and DevOps mentor introduced me to Incus. Before that, I had tried Proxmox and gotten frustrated. What changed wasn't just the tool, it was the philosophy behind it.
+About a year ago, a friend and unofficial Linux and DevOps mentor introduced me to Incus. Before that, I had tried Proxmox and gotten frustrated. What changed wasn't just the tool, it was the philosophy behind it.
 
 ## The Proxmox experience
 
